@@ -10,7 +10,7 @@ enum Languages {
 message MessageRequest {
     string ServiceRequester = 1;
     Languages Lang = 2;
-    int32 Code = 3;
+    uint32 Code = 3;
 }
 
 message MessageResponse {
@@ -20,7 +20,7 @@ message MessageResponse {
 message PushMessage {
     string Value = 1;
     Languages Lang = 2;
-    int32 Code = 3;
+    uint32 Code = 3;
 }
 message PushMessageReq {
     PushMessage PushMessage = 1;
