@@ -1,0 +1,12 @@
+syntax="proto3";
+package RpcInternl;
+
+option go_package = "github.com/benka-me/internationalisation/go-pkg/rpc-internl";
+
+import "github.com/benka-me/internationalisation/protobuf/internl.proto";
+
+service Internl {
+    rpc GetMessage(internl.MessageRequest) returns (internl.MessageResponse);
+    rpc PushMessage(internl.PushMessageReq) returns (internl.PushMessageRes);
+}
+

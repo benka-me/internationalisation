@@ -1,0 +1,30 @@
+name: internationalisation
+pkgName: internl
+pkgNameCamel: Internl
+repo: github.com/benka-me/internationalisation
+author: ""
+authorEmail: ""
+port: 8030
+public: false
+license: ""
+description: ""
+keywords: ""
+devlang: 0
+languages:
+  go:
+    setup:
+      active: true
+      repo: github.com/benka-me/internationalisation
+      files:
+      - internl.proto
+      - rpc-internl.proto
+      pkgname: internl
+  javascript:
+    setup:
+      active: true
+      repo: github.com/benka-me/internationalisation
+      files:
+      - internl.proto
+      - rpc-internl.proto
+      pkgname: internl
+isgateway: false

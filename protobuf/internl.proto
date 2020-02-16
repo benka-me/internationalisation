@@ -1,0 +1,29 @@
+syntax="proto3";
+package internl;
+
+option go_package = "github.com/benka-me/internationalisation/go-pkg/internl";
+
+enum Languages {
+    EN = 0;
+    FR = 1;
+}
+message MessageRequest {
+    string ServiceRequester = 1;
+    Languages Lang = 2;
+    int32 Code = 3;
+}
+
+message MessageResponse {
+    string Value = 1;
+}
+
+message PushMessage {
+    string Value = 1;
+    Languages Lang = 2;
+    int32 Code = 3;
+}
+message PushMessageReq {
+    PushMessage PushMessage = 1;
+}
+message PushMessageRes {
+}
