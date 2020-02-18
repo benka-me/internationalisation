@@ -163,7 +163,7 @@ func TestScene1(t *testing.T) {
 			if err != nil {
 				t.Errorf("GetAll() error = %v", err)
 			}
-			if len(all.Values) != allLen {
+			if len(all.Codes) != allLen {
 				t.Errorf("GetAll() error = bad len")
 			}
 		})

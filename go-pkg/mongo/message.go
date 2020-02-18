@@ -2,6 +2,7 @@ package mongo
 
 import (
 	"context"
+	"fmt"
 	"github.com/benka-me/internationalisation/go-pkg/internl"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -42,6 +43,7 @@ func GetMessage(ctx context.Context, req *internl.MessageRequest, client *mongo.
 
 	err := client.Database(db).Collection(messages).
 		FindOne(ctx, filter).Decode(c)
+	fmt.Println(err, c)
 	if err != nil {
 		return "", err
 	}
@@ -86,21 +88,18 @@ func GetCode(ctx context.Context, req *internl.CodeReq, client *mongo.Client) (*
 func GetAll(ctx context.Context, req *internl.AllReq, client *mongo.Client) (*internl.All, error) {
 	all := &internl.All{}
 	filter := bson.D{}
-	all.Values = make(map[uint32]string)
+	all.Codes = make(map[uint32]*internl.Code)
 
 	cur, _ := client.Database(db).Collection(messages).
 		Find(ctx, filter)
 
 	for cur.Next(ctx) {
-		tmp := struct {
-			Title string
-			Code uint32
-		}{}
-		err := cur.Decode(&tmp)
+		tmp := &internl.Code{}
+		err := cur.Decode(tmp)
 		if err != nil {
 			return all, err
 		}
-		all.Values[tmp.Code] = tmp.Title
+		all.Codes[tmp.Code] = tmp
 	}
 
 	return all, nil

@@ -54,6 +54,7 @@ message Code{
 }
 
 message AllReq {}
+
 message All {
-    map<uint32, string> Values = 3;
+    map<uint32, Code> Codes= 3;
 }
