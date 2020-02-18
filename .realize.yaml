@@ -32,7 +32,7 @@ schema:
     extensions:
     - go
     paths:
-    - ../go-pkg
+    - ./go-pkg
     ignored_paths:
     - .git
     - .realize

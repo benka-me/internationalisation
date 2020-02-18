@@ -7,6 +7,9 @@ import "github.com/benka-me/internationalisation/protobuf/internl.proto";
 
 service Internl {
     rpc GetMessage(internl.MessageRequest) returns (internl.MessageResponse);
-    rpc PushMessage(internl.PushMessageReq) returns (internl.PushMessageRes);
+    rpc UpdateMessage(internl.PushMessage) returns (internl.PushMessageRes);
+    rpc InsertCode(internl.NewCode) returns (internl.NewCodeRes);
+    rpc UpdateTitle(internl.SetTitleCode) returns (internl.SetTitleCodeRes);
+    rpc GetCode(internl.CodeReq) returns (internl.Code);
+    rpc GetAll(internl.AllReq) returns (internl.All);
 }
-

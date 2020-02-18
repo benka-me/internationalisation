@@ -28,22 +28,28 @@ const _ = proto.GoGoProtoPackageIsVersion3 // please upgrade the proto package
 func init() { proto.RegisterFile("rpc-internl.proto", fileDescriptor_e2fc9808231097fb) }
 
 var fileDescriptor_e2fc9808231097fb = []byte{
-	// 236 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x2c, 0x2a, 0x48, 0xd6,
-	0xcd, 0xcc, 0x2b, 0x49, 0x2d, 0xca, 0xcb, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0xe2, 0x0a,
-	0x2a, 0x48, 0xf6, 0x84, 0x88, 0x48, 0xd9, 0xa7, 0x67, 0x96, 0x64, 0x94, 0x26, 0xe9, 0x25, 0xe7,
-	0xe7, 0xea, 0x27, 0xa5, 0xe6, 0x65, 0x27, 0xea, 0xe6, 0xa6, 0xea, 0x43, 0x94, 0x27, 0x96, 0x64,
-	0xe6, 0xe7, 0x25, 0xe6, 0x64, 0x16, 0x83, 0x19, 0xfa, 0x60, 0xbd, 0x49, 0xa5, 0x69, 0xfa, 0x28,
-	0x86, 0x19, 0x75, 0x33, 0x72, 0xb1, 0x43, 0x0d, 0x13, 0xb2, 0xe7, 0xe2, 0x72, 0x4f, 0x2d, 0xf1,
-	0x4d, 0x2d, 0x2e, 0x4e, 0x4c, 0x4f, 0x15, 0x12, 0xd7, 0x83, 0xa9, 0x84, 0x8a, 0x04, 0xa5, 0x16,
-	0x96, 0xa6, 0x16, 0x97, 0x48, 0x49, 0x60, 0x4a, 0x14, 0x17, 0xe4, 0xe7, 0x15, 0xa7, 0x0a, 0xd9,
-	0x73, 0x71, 0x07, 0x94, 0x16, 0x67, 0x60, 0x9a, 0x80, 0x24, 0x1a, 0x94, 0x5a, 0x28, 0x85, 0x43,
-	0xa2, 0xd8, 0xa9, 0xf0, 0xc2, 0x43, 0x39, 0x86, 0x1b, 0x0f, 0xe5, 0x18, 0x3e, 0x3c, 0x94, 0x63,
-	0x6c, 0x78, 0x24, 0xc7, 0xb8, 0xe2, 0x91, 0x1c, 0xe3, 0x89, 0x47, 0x72, 0x8c, 0x17, 0x1e, 0xc9,
-	0x31, 0x3e, 0x78, 0x24, 0xc7, 0xf8, 0xe2, 0x91, 0x1c, 0xc3, 0x87, 0x47, 0x72, 0x8c, 0x13, 0x1e,
-	0xcb, 0x31, 0x5c, 0x78, 0x2c, 0xc7, 0x70, 0xe3, 0xb1, 0x1c, 0x43, 0x94, 0x35, 0xd1, 0x81, 0x90,
-	0x9e, 0xaf, 0x5b, 0x90, 0x9d, 0xae, 0x8f, 0x14, 0xa6, 0x49, 0x6c, 0xe0, 0x70, 0x30, 0x06, 0x04,
-	0x00, 0x00, 0xff, 0xff, 0x14, 0xbe, 0xb9, 0x24, 0x69, 0x01, 0x00, 0x00,
+	// 329 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x92, 0x31, 0x4f, 0xc2, 0x40,
+	0x14, 0xc7, 0x7b, 0x0e, 0x90, 0x9c, 0x12, 0xf5, 0xd4, 0x40, 0x3a, 0xbc, 0xd5, 0xc4, 0x04, 0x9a,
+	0xc8, 0x68, 0x02, 0x41, 0x07, 0xc2, 0xa0, 0x31, 0xa8, 0x8b, 0x5b, 0x0b, 0xcf, 0xd2, 0x70, 0xf4,
+	0x8e, 0xde, 0x35, 0xae, 0x7e, 0x04, 0x3f, 0x86, 0x1f, 0xc5, 0x91, 0xc1, 0x81, 0x51, 0x8e, 0xc5,
+	0x91, 0x8f, 0x60, 0xda, 0x42, 0x03, 0xc8, 0xe0, 0x76, 0xf9, 0xbd, 0xdf, 0xff, 0xff, 0x86, 0x77,
+	0xf4, 0x38, 0x92, 0xbd, 0x6a, 0x10, 0x6a, 0x8c, 0x42, 0x5e, 0x93, 0x91, 0xd0, 0x82, 0xd1, 0xae,
+	0xec, 0x75, 0x32, 0x62, 0x37, 0xfd, 0x40, 0x0f, 0x62, 0xaf, 0xd6, 0x13, 0x23, 0xc7, 0xc3, 0x70,
+	0xe8, 0x56, 0x47, 0xe8, 0x64, 0xba, 0xab, 0x03, 0x11, 0xba, 0x3c, 0x50, 0xe9, 0xc3, 0x49, 0xb3,
+	0x5e, 0xfc, 0xe2, 0x6c, 0x94, 0x5d, 0x7e, 0xed, 0xd1, 0xe2, 0xb2, 0x8c, 0x35, 0x29, 0x6d, 0xa3,
+	0xbe, 0x45, 0xa5, 0x5c, 0x1f, 0x59, 0xb9, 0xb6, 0x32, 0x97, 0xa4, 0x8b, 0xe3, 0x18, 0x95, 0xb6,
+	0x2b, 0x7f, 0x07, 0x4a, 0x8a, 0x50, 0x21, 0x6b, 0xd0, 0xd2, 0x93, 0xec, 0xbb, 0x1a, 0x57, 0x1d,
+	0xa7, 0xb9, 0x7a, 0x1f, 0xab, 0xc1, 0x92, 0xda, 0xe5, 0x5d, 0xb4, 0x8b, 0x8a, 0xd5, 0x29, 0xed,
+	0x84, 0x0a, 0x23, 0x7d, 0x23, 0xfa, 0xc8, 0x8e, 0x72, 0xed, 0x0e, 0x5f, 0x13, 0x62, 0x9f, 0x6c,
+	0x93, 0x24, 0xd4, 0xa0, 0xfb, 0xd9, 0xd2, 0xc7, 0x40, 0x73, 0x64, 0x67, 0xb9, 0xf3, 0x80, 0x3a,
+	0x45, 0x69, 0xb4, 0xb2, 0x13, 0x27, 0xf9, 0x0b, 0x5a, 0x6c, 0xe3, 0xf6, 0xc6, 0x6c, 0x38, 0xb6,
+	0x4b, 0x1b, 0x84, 0x9d, 0xd3, 0x42, 0x1b, 0x75, 0x8b, 0x73, 0x76, 0x98, 0x0f, 0x5a, 0x9c, 0x27,
+	0xe6, 0xc1, 0x3a, 0xb8, 0x1e, 0x4f, 0x66, 0x60, 0x4d, 0x67, 0x60, 0x2d, 0x66, 0x40, 0xde, 0x0c,
+	0x90, 0x0f, 0x03, 0xe4, 0xd3, 0x00, 0x99, 0x18, 0x20, 0xdf, 0x06, 0xc8, 0x8f, 0x01, 0x6b, 0x61,
+	0x80, 0xbc, 0xcf, 0xc1, 0x9a, 0xcc, 0xc1, 0x9a, 0xce, 0xc1, 0x7a, 0xbe, 0xfa, 0xf7, 0x35, 0x7d,
+	0x51, 0x95, 0x43, 0xdf, 0x59, 0xfb, 0x1c, 0x5e, 0x21, 0x3d, 0x68, 0xfd, 0x37, 0x00, 0x00, 0xff,
+	0xff, 0x47, 0x1d, 0x41, 0xb1, 0x32, 0x02, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -59,7 +65,11 @@ const _ = grpc.SupportPackageIsVersion4
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type InternlClient interface {
 	GetMessage(ctx context.Context, in *internl.MessageRequest, opts ...grpc.CallOption) (*internl.MessageResponse, error)
-	PushMessage(ctx context.Context, in *internl.PushMessageReq, opts ...grpc.CallOption) (*internl.PushMessageRes, error)
+	UpdateMessage(ctx context.Context, in *internl.PushMessage, opts ...grpc.CallOption) (*internl.PushMessageRes, error)
+	InsertCode(ctx context.Context, in *internl.NewCode, opts ...grpc.CallOption) (*internl.NewCodeRes, error)
+	UpdateTitle(ctx context.Context, in *internl.SetTitleCode, opts ...grpc.CallOption) (*internl.SetTitleCodeRes, error)
+	GetCode(ctx context.Context, in *internl.CodeReq, opts ...grpc.CallOption) (*internl.Code, error)
+	GetAll(ctx context.Context, in *internl.AllReq, opts ...grpc.CallOption) (*internl.All, error)
 }
 
 type internlClient struct {
@@ -79,9 +89,45 @@ func (c *internlClient) GetMessage(ctx context.Context, in *internl.MessageReque
 	return out, nil
 }
 
-func (c *internlClient) PushMessage(ctx context.Context, in *internl.PushMessageReq, opts ...grpc.CallOption) (*internl.PushMessageRes, error) {
+func (c *internlClient) UpdateMessage(ctx context.Context, in *internl.PushMessage, opts ...grpc.CallOption) (*internl.PushMessageRes, error) {
 	out := new(internl.PushMessageRes)
-	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/PushMessage", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/UpdateMessage", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *internlClient) InsertCode(ctx context.Context, in *internl.NewCode, opts ...grpc.CallOption) (*internl.NewCodeRes, error) {
+	out := new(internl.NewCodeRes)
+	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/InsertCode", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *internlClient) UpdateTitle(ctx context.Context, in *internl.SetTitleCode, opts ...grpc.CallOption) (*internl.SetTitleCodeRes, error) {
+	out := new(internl.SetTitleCodeRes)
+	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/UpdateTitle", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *internlClient) GetCode(ctx context.Context, in *internl.CodeReq, opts ...grpc.CallOption) (*internl.Code, error) {
+	out := new(internl.Code)
+	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/GetCode", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *internlClient) GetAll(ctx context.Context, in *internl.AllReq, opts ...grpc.CallOption) (*internl.All, error) {
+	out := new(internl.All)
+	err := c.cc.Invoke(ctx, "/RpcInternl.Internl/GetAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -91,7 +137,11 @@ func (c *internlClient) PushMessage(ctx context.Context, in *internl.PushMessage
 // InternlServer is the server API for Internl service.
 type InternlServer interface {
 	GetMessage(context.Context, *internl.MessageRequest) (*internl.MessageResponse, error)
-	PushMessage(context.Context, *internl.PushMessageReq) (*internl.PushMessageRes, error)
+	UpdateMessage(context.Context, *internl.PushMessage) (*internl.PushMessageRes, error)
+	InsertCode(context.Context, *internl.NewCode) (*internl.NewCodeRes, error)
+	UpdateTitle(context.Context, *internl.SetTitleCode) (*internl.SetTitleCodeRes, error)
+	GetCode(context.Context, *internl.CodeReq) (*internl.Code, error)
+	GetAll(context.Context, *internl.AllReq) (*internl.All, error)
 }
 
 // UnimplementedInternlServer can be embedded to have forward compatible implementations.
@@ -101,8 +151,20 @@ type UnimplementedInternlServer struct {
 func (*UnimplementedInternlServer) GetMessage(ctx context.Context, req *internl.MessageRequest) (*internl.MessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMessage not implemented")
 }
-func (*UnimplementedInternlServer) PushMessage(ctx context.Context, req *internl.PushMessageReq) (*internl.PushMessageRes, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PushMessage not implemented")
+func (*UnimplementedInternlServer) UpdateMessage(ctx context.Context, req *internl.PushMessage) (*internl.PushMessageRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateMessage not implemented")
+}
+func (*UnimplementedInternlServer) InsertCode(ctx context.Context, req *internl.NewCode) (*internl.NewCodeRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method InsertCode not implemented")
+}
+func (*UnimplementedInternlServer) UpdateTitle(ctx context.Context, req *internl.SetTitleCode) (*internl.SetTitleCodeRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateTitle not implemented")
+}
+func (*UnimplementedInternlServer) GetCode(ctx context.Context, req *internl.CodeReq) (*internl.Code, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetCode not implemented")
+}
+func (*UnimplementedInternlServer) GetAll(ctx context.Context, req *internl.AllReq) (*internl.All, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAll not implemented")
 }
 
 func RegisterInternlServer(s *grpc.Server, srv InternlServer) {
@@ -127,20 +189,92 @@ func _Internl_GetMessage_Handler(srv interface{}, ctx context.Context, dec func(
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Internl_PushMessage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(internl.PushMessageReq)
+func _Internl_UpdateMessage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(internl.PushMessage)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(InternlServer).PushMessage(ctx, in)
+		return srv.(InternlServer).UpdateMessage(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/RpcInternl.Internl/PushMessage",
+		FullMethod: "/RpcInternl.Internl/UpdateMessage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(InternlServer).PushMessage(ctx, req.(*internl.PushMessageReq))
+		return srv.(InternlServer).UpdateMessage(ctx, req.(*internl.PushMessage))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Internl_InsertCode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(internl.NewCode)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(InternlServer).InsertCode(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/RpcInternl.Internl/InsertCode",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(InternlServer).InsertCode(ctx, req.(*internl.NewCode))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Internl_UpdateTitle_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(internl.SetTitleCode)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(InternlServer).UpdateTitle(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/RpcInternl.Internl/UpdateTitle",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(InternlServer).UpdateTitle(ctx, req.(*internl.SetTitleCode))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Internl_GetCode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(internl.CodeReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(InternlServer).GetCode(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/RpcInternl.Internl/GetCode",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(InternlServer).GetCode(ctx, req.(*internl.CodeReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Internl_GetAll_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(internl.AllReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(InternlServer).GetAll(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/RpcInternl.Internl/GetAll",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(InternlServer).GetAll(ctx, req.(*internl.AllReq))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -154,8 +288,24 @@ var _Internl_serviceDesc = grpc.ServiceDesc{
 			Handler:    _Internl_GetMessage_Handler,
 		},
 		{
-			MethodName: "PushMessage",
-			Handler:    _Internl_PushMessage_Handler,
+			MethodName: "UpdateMessage",
+			Handler:    _Internl_UpdateMessage_Handler,
+		},
+		{
+			MethodName: "InsertCode",
+			Handler:    _Internl_InsertCode_Handler,
+		},
+		{
+			MethodName: "UpdateTitle",
+			Handler:    _Internl_UpdateTitle_Handler,
+		},
+		{
+			MethodName: "GetCode",
+			Handler:    _Internl_GetCode_Handler,
+		},
+		{
+			MethodName: "GetAll",
+			Handler:    _Internl_GetAll_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

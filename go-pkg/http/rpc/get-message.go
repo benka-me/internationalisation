@@ -7,9 +7,10 @@ import (
 )
 
 func (app *App) GetMessage(ctx context.Context, req *internl.MessageRequest) (*internl.MessageResponse, error) {
-	m := &internl.Message{}
-	filter := bson.D{{"data.username", identifier.GetName()},}
-	app.Client.Database(app.Collection.Database).Collection(app.Collection.Messages).
-		FindOne(context.TODO(), filter).Decode(&u)
+	m := &internl.MessageResponse{}
+	//filter := bson.D{{"data.username", }}
+	_ = app.Client.Database(app.Collection.Database).
+		Collection(req.GetCodeStr()).
+		FindOne(context.TODO(), bson.D{}).Decode(&m)
 	return &internl.MessageResponse{}, nil
 }

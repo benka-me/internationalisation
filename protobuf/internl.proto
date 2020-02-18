@@ -22,8 +22,38 @@ message PushMessage {
     Languages Lang = 2;
     uint32 Code = 3;
 }
-message PushMessageReq {
-    PushMessage PushMessage = 1;
-}
 message PushMessageRes {
+}
+
+message NewCode {
+    string Title = 1;
+    uint32 Code = 2;
+}
+
+message NewCodeRes {
+
+}
+
+message SetTitleCode {
+    string Title = 1;
+    uint32 Code = 2;
+}
+
+message SetTitleCodeRes {
+
+}
+
+message CodeReq {
+    uint32 Code = 1;
+}
+
+message Code{
+    uint32 Code = 1;
+    string Title = 2;
+    map<uint32, string> Values = 3;
+}
+
+message AllReq {}
+message All {
+    map<uint32, string> Values = 3;
 }
